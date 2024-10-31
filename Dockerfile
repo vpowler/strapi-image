@@ -9,7 +9,7 @@ WORKDIR /opt/
 COPY . .
 
 RUN npm install -g node-gyp
-RUN yarn install --production
+RUN yarn install
 RUN yarn build
 
 RUN chown -R node:node /opt
